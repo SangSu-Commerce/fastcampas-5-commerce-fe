@@ -20,7 +20,7 @@ const HomeHeader = ({ variant = 'light' }: HomeHeaderProps) => {
   return (
     <>
       <Flex //
-        as="header"
+        as="header" //header 처럼 쓸수있도록
         px={{ base: '16px', md: '80px' }}
         alignItems="center"
         justifyContent="space-between"
