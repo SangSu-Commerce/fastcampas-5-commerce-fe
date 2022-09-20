@@ -40,9 +40,9 @@ exports.module = {
     /**  해당 프로젝트의 github repository 이름입니다. 이슈 생성시 해당 이름으로 접근하기에, 정확히 기입해야 합니다 */
     repoName: process.env.GITHUB_REPO,
     /**  해당 프로젝트 repository 의 owner 로 써. organization 이름입니다 */
-    owner: 'TOKTOKHAN-DEV',
+    owner: 'SangSu-Commerce',
     /**  이슈 생성시 이슈를 추적할 맴버의 아이디 목록 입니다 */
-    assignees: ['ldu1020'],
+    assignees: ['1sol2sol'],
     /**  이슈 생성시 이슈에 달릴 수 있는 이슈 label 의 목록입니다 */
     labels: ['bug', 'feature'],
   },
