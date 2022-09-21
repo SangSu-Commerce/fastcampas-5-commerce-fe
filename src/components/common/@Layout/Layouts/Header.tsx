@@ -7,7 +7,7 @@ import { CartIcon, LogoIcon, MenuIcon } from 'generated/icons/MyIcons';
 
 function Header(){
   return(
-  // <Container maxW={LAYOUT.SIZE.WIDTH} >
+  <Container maxW={LAYOUT.SIZE.WIDTH} px={0}>
     <Flex //
       as="header"
       alignItems="center"
@@ -22,7 +22,7 @@ function Header(){
         <LogoIcon cursor="pointer"/>
         <CartIcon cursor="pointer"  />
       </Flex>
-  // </Container>
+   </Container>
   )
 }
 

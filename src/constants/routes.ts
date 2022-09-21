@@ -3,7 +3,7 @@ export const ROUTES = {
   //@delete:line
   STARTER_DOCS: {
     //@delete:line
-    MAIN: '/starter-docs',
+    MAIN: '/test',
     //@delete:line
     THEME_VIEWER: '/starter-docs/theme-viewer',
     //@delete:line
