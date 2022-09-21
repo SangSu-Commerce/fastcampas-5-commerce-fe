@@ -11,9 +11,9 @@ function Home() {
   const router = useRouter();
 
   // For: Redirect To Starter Docs Page (나중에 꼭 지워주세요)
-  // React.useEffect(() => {
-  //   router.push(ROUTES.STARTER_DOCS.MAIN);
-  // }, [router]);
+  React.useEffect(() => {
+    router.push(ROUTES.STARTER_DOCS.MAIN);
+  }, [router]);
 
   return (
     <>
