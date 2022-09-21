@@ -24,7 +24,7 @@
     "clean-up": "node src/scripts/remove-unnecessary.js"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.1.0",
+    "@chakra-ui/react": "^2.3.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@hookform/resolvers": "^2.8.8",
