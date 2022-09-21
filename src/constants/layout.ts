@@ -4,6 +4,6 @@ export const LAYOUT = {
   },
   SIZE: {
     WIDTH: '375px',
-    // PADDING: '16PX',
-  },
+    PADDING: '16px',
+  }
 };
