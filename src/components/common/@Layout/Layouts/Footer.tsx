@@ -15,7 +15,7 @@ const Footer = () => {
           <VStack alignItems="flex-start" color="white" pt="30px">
             <Text fontSize={12} fontWeight="300" lineHeight={2}>
               팀명 &#124; 상수커머스 <br />
-              구성원 &#124; 권영민, 윤한솔, 이보룡 <br />
+              구성원 &#124; 권영민, 윤한솔 <br />
               이메일 mmmyoung95@gmail.com
             </Text>
             <Text fontSize={12} fontWeight="300" pt="40px" pb="55px">
