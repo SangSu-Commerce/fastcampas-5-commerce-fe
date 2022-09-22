@@ -17,7 +17,7 @@ interface HomeLayoutProps {
 
 const HomeLayout = ({
   header = <Header />,
-  footer = <Footer/>,
+  footer = <Footer />,
   containerProps,
   content,
 }: HomeLayoutProps) => {
