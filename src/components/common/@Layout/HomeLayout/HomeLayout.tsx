@@ -22,15 +22,9 @@ const HomeLayout = ({
   content,
 }: HomeLayoutProps) => {
   return (
-    <Container px="0" position="relative" h="auto" maxW="375px">
+    <Container px="0" position="relative" h="auto" maxW="375px" >
       {header}
-      <Container
-        pt={LAYOUT.HEADER.HEIGHT}
-        {...containerProps}
-        h="auto"
-        pb="275px"
-        minH="100%"
-      >
+      <Container pt={LAYOUT.HEADER.HEIGHT} {...containerProps}  h="auto" pb="275px" minH="100%">
         {content}
       </Container>
       {footer}
