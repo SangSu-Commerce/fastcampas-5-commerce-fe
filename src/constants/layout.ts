@@ -5,5 +5,5 @@ export const LAYOUT = {
   SIZE: {
     WIDTH: '375px',
     PADDING: '16px',
-  }
+  },
 };

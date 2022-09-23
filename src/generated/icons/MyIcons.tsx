@@ -1,4 +1,5 @@
-import { IconProps, Icon } from '@chakra-ui/react';
+import { Icon, IconProps } from '@chakra-ui/react';
+
 export const CartIcon = (props: IconProps) => (
   <Icon w="24px" h="24px" viewBox="0 0 24 24" {...props}>
     <path
@@ -24,8 +25,40 @@ export const CartIcon = (props: IconProps) => (
     />
   </Icon>
 );
+export const ExitIcon = (props: IconProps) => (
+  <Icon w="24px" h="24px" viewBox="0 0 24 24" {...props}>
+    <g clipPath="url(#clip0_5113_12900)">
+      <path
+        d="M16.3135 8.0625L20.2499 12L16.3135 15.9375"
+        stroke="#1A1A1A"
+        strokeWidth={1.3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.75 12H20.2472"
+        stroke="#1A1A1A"
+        strokeWidth={1.3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75"
+        stroke="#1A1A1A"
+        strokeWidth={1.3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_5113_12900">
+        <rect width={24} height={24} fill="white" />
+      </clipPath>
+    </defs>
+  </Icon>
+);
 export const LogoIcon = (props: IconProps) => (
-  <Icon w="120px" h="16px" viewBox="0 0 120 16 " {...props}>
+  <Icon w="120px" h="16px" viewBox="0 0 120 16" {...props}>
     <g clipPath="url(#clip0_5113_10285)">
       <path d="M0 0H6.02436V16.4834H0.111124L0 0Z" fill="#FF710B" />
       <path
@@ -62,21 +95,6 @@ export const MenuIcon = (props: IconProps) => (
 export const MoonIcon = (props: IconProps) => (
   <Icon viewBox="0 0 24 24" {...props}>
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-  </Icon>
-);
-export const SearchIcon = (props: IconProps) => (
-  <Icon viewBox="0 0 24 24" {...props}>
-    <path
-      d="M10 17.25C14.0041 17.25 17.25 14.0041 17.25 10C17.25 5.99594 14.0041 2.75 10 2.75C5.99594 2.75 2.75 5.99594 2.75 10C2.75 14.0041 5.99594 17.25 10 17.25Z"
-      stroke="#1A1A1A"
-      strokeWidth={1.5}
-    />
-    <path
-      d="M15.5 15.5L21.5 21.5"
-      stroke="#1A1A1A"
-      strokeWidth={2}
-      strokeLinecap="round"
-    />
   </Icon>
 );
 export const SunIcon = (props: IconProps) => (
