@@ -1,4 +1,5 @@
-import { IconProps, Icon } from '@chakra-ui/react';
+import { Icon, IconProps } from '@chakra-ui/react';
+
 export const CartIcon = (props: IconProps) => (
   <Icon w="24px" h="24px" viewBox="0 0 24 24" {...props}>
     <path

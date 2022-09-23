@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Container, Box, VStack, Drawer, DrawerBody, DrawerCloseButton, DrawerOverlay, DrawerContent, Flex, useDisclosure, Img } from '@chakra-ui/react';
 import { LAYOUT } from '@constants/layout';
 import { CartIcon, ExitIcon, LogoIcon, MenuIcon } from 'generated/icons/MyIcons';
