@@ -25,10 +25,10 @@ const HomeLayout = ({
     <Container px="0" position="relative" h="auto" maxW="375px">
       {header}
       <Container
-        pt={LAYOUT.HEADER.HEIGHT}
+        pt={LAYOUT.HEADER.HEIGHT} // 80
         {...containerProps}
         h="auto"
-        pb="275px"
+        // pb="30px"
         minH="100%"
       >
         {content}

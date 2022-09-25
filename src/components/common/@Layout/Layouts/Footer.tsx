@@ -13,6 +13,7 @@ const Footer = () => {
         height="285"
         position="relative"
         bottom="0"
+        mt="30px"
       >
         <VStack w="100%" maxW={LAYOUT.SIZE.WIDTH} alignItems="flex-start">
           <Heading fontSize="16px" fontWeight="700" color="white" pt="35px">
