@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, ChakraProps, VStack, Img } from '@chakra-ui/react';
+
+import { Box, ChakraProps, Img, VStack } from '@chakra-ui/react';
+
 import SocialButton from '@components/common/SocialButton';
-
-
 
 interface LoginPageProps extends ChakraProps {}
 
@@ -15,10 +15,12 @@ function LoginPage({ ...basisProps }: LoginPageProps) {
       py="50px"
     >
       <Box></Box>
-      <Img src='icons/svg/login-logo.svg'/>
-      <SocialButton data={{social: 'kakao',link: '' }} size="md"></SocialButton>
-  </VStack>
-    
+      <Img src="icons/svg/login-logo.svg" />
+      <SocialButton
+        data={{ social: 'kakao', link: '' }}
+        size="md"
+      ></SocialButton>
+    </VStack>
   );
 }
 
