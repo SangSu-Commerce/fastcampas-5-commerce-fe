@@ -52,12 +52,14 @@ export default function Item() {
         alignItems="flex-start"
         mt="15px"
         p="10px"
-        w="310px"
+        w="315px"
         bg="gray.200"
         borderRadius="5px"
       >
         <VStack>
-          <Box color="#8C919F">바스 & 샴푸</Box>
+          <Box w="300px" color="#8C919F">
+            바스 & 샴푸
+          </Box>
           <Flex justify="space-between" w="full" mt="4px">
             <Flex h="25px" alignSelf="center">
               <Box
@@ -96,9 +98,9 @@ export default function Item() {
                   color="gray.800"
                   p={0}
                   bg="white"
-                  // value={item.quantity}
+                  value="0" //추후 가변형으로
                   readOnly
-                ></Input>
+                />
               </Flex>
               <Box
                 position="relative"
@@ -130,11 +132,20 @@ export default function Item() {
                 }}
                 // onClick={incQuantity}
                 _hover={{ cursor: 'pointer' }}
-              ></Box>
+              />
             </Flex>
-            {/* <Flex {...TitleText} color="gray.600" alignItems="center">50,000원</Flex> */}
+            <Flex {...TitleText} color="gray.600">
+              <Box>50,000원</Box>
+            </Flex>
           </Flex>
         </VStack>
+      </Flex>
+      <Flex justify="space-between" w="310px" pt="5px">
+        <Box {...SubText} color="black">
+          배송비 무료
+          {/* {total > 30000 ? '배송비 무료' : ''} */}
+        </Box>
+        <Box {...PriceText}>50,000원</Box>
       </Flex>
     </VStack>
   );
@@ -144,4 +155,16 @@ const TitleText = {
   fontWeight: 700,
   fontSize: '16px',
   lineHeight: '28px',
+};
+const PriceText = {
+  fontWeight: 700,
+  fontSize: '20px',
+  lineHeight: '29px',
+};
+
+const SubText = {
+  fontWeight: 400,
+  fontSize: '16px',
+  lineHeight: '28px',
+  color: 'gray.600',
 };
