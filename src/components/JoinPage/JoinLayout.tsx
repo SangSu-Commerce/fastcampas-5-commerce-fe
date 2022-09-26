@@ -4,38 +4,35 @@ import { Container, ContainerProps } from '@chakra-ui/react';
 
 import { LAYOUT } from '@constants/layout';
 
-// import HomeHeader from './_fragments/HomeHeader';
-import Footer from '../Layouts/Footer';
-import Header from '../Layouts/Header';
+import JoinHeader from './JoinHeader';
 
-interface HomeLayoutProps {
+interface JoinLayoutProps {
   header?: JSX.Element;
   footer?: JSX.Element;
   content?: JSX.Element;
   containerProps?: ContainerProps;
 }
 
-const HomeLayout = ({
-  header = <Header />,
-  footer = <Footer />,
+const JoinLayout = ({
+  //
+  header = <JoinHeader />,
+  footer,
   containerProps,
   content,
-}: HomeLayoutProps) => {
+}: JoinLayoutProps) => {
   return (
-    <Container px="0" position="relative" h="auto" maxW="375px">
+    <>
       {header}
       <Container
         pt={LAYOUT.HEADER.HEIGHT}
+        maxW={LAYOUT.SIZE.WIDTH}
         {...containerProps}
-        h="auto"
-        pb="275px"
-        minH="100%"
       >
         {content}
       </Container>
       {footer}
-    </Container>
+    </>
   );
 };
 
-export default HomeLayout;
+export default JoinLayout;

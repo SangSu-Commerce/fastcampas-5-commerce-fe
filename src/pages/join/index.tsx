@@ -1,15 +1,14 @@
 import Head from 'next/head';
-import HomeLayout from '@components/common/@Layout/HomeLayout';
 import JoinPage from '@components/JoinPage';
+import JoinLayout from '@components/JoinPage/JoinLayout';
 
 function Join() {
   return (
     <>
       <Head>
-        {/* ex) Your App Name | Page Name */}
-        <title>똑똑한 개발자 | join</title>
+        <title>상수커머스 | join</title>
       </Head>
-      <HomeLayout content={<JoinPage />} />
+      <JoinLayout content={<JoinPage />} />
     </>
   );
 }
