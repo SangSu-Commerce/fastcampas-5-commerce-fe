@@ -7,7 +7,14 @@ import { LAYOUT } from '@constants/layout';
 const Footer = () => {
   return (
     <>
-      <Container bg="#1a1a1a33" maxW={LAYOUT.SIZE.WIDTH} height="285" position="relative" bottom="0">
+      <Container
+        bg="#1a1a1a33"
+        maxW={LAYOUT.SIZE.WIDTH}
+        height="285"
+        position="relative"
+        bottom="0"
+        mt="30px"
+      >
         <VStack w="100%" maxW={LAYOUT.SIZE.WIDTH} alignItems="flex-start">
           <Heading fontSize="16px" fontWeight="700" color="white" pt="35px">
             INCOURSE.RUN
