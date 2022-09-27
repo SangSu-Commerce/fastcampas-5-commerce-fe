@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, ChakraProps, Text } from '@chakra-ui/react';
+import { Box, ChakraProps, Text, Img } from '@chakra-ui/react';
 
 interface TestPageProps extends ChakraProps {}
 
