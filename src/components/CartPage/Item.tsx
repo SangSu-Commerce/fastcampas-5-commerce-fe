@@ -17,21 +17,18 @@ import {
 
 export default function Item() {
   return (
-    <VStack
-      w="full"
-      pl="16px"
-      // pr="16px"
-      // spacing={0}
-      pt="20px"
-      // pb="20.5px"
-      // position="relative"
-    >
+    <VStack {...ItemContainer}>
+      <Checkbox {...ItemCheckBox} />
       <Flex w="310px" justify="flex-start">
         <Img w="90px" h="90px" src="/icons/svg/shampoo.svg"></Img>
         <VStack pl="5px" spacing={0} alignItems="flex-start">
-          <Box h="28px" color="black">
-            [파격세일] 바스 & 샴푸
-          </Box>
+          <HStack w="210px" justify="space-between">
+            <Box h="28px" color="black">
+              [파격세일] 바스 & 샴푸
+            </Box>
+            <CloseButton right="30px"></CloseButton>
+          </HStack>
+
           <Box font-size="12px" h="28px" color="#8C919F">
             [파격세일] 바스 & 샴푸 | 120ml
           </Box>
@@ -40,22 +37,8 @@ export default function Item() {
           </Box>
         </VStack>
       </Flex>
-      <Checkbox
-        colorScheme="orange"
-        size="lg"
-        position="absolute"
-        left="16px"
-        top="152px"
-      />
-      <CloseButton position="absolute" top="146px" right="10px"></CloseButton>
-      <Flex
-        alignItems="flex-start"
-        mt="15px"
-        p="10px"
-        w="315px"
-        bg="gray.200"
-        borderRadius="5px"
-      >
+
+      <Flex {...GrayContainer}>
         <VStack>
           <Box w="300px" color="#8C919F">
             바스 & 샴푸
@@ -64,31 +47,12 @@ export default function Item() {
             <Flex h="25px" alignSelf="center">
               <Box
                 position="relative"
-                bg="white"
-                border="1px solid #EAECF0"
-                borderRadius="5px 0px 0px 5px"
-                p={0}
-                w="25px"
-                h="25px"
-                _after={{
-                  content: '""',
-                  display: 'block',
-                  height: '1px',
-                  width: '9px',
-                  backgroundColor: '#4A4D55',
-                  position: 'absolute',
-                  top: '11px',
-                  left: '7px',
-                }}
+                {...InputButton}
+                _after={HorizonBar}
                 _hover={{ cursor: 'pointer' }}
                 // onClick={decQuantity}
               ></Box>
-              <Flex
-                w="23px"
-                h="full"
-                borderTop="1px solid #EAECF0"
-                borderBottom="1px solid #EAECF0"
-              >
+              <Flex {...InputValContainer}>
                 <Input
                   w="full"
                   h="full"
@@ -104,32 +68,9 @@ export default function Item() {
               </Flex>
               <Box
                 position="relative"
-                bg="white"
-                border="1px solid #EAECF0"
-                borderRadius="0px 5px 5px 0px"
-                w="25px"
-                h="25px"
-                p={0}
-                _before={{
-                  content: '""',
-                  display: 'block',
-                  width: '1px',
-                  height: '9px',
-                  backgroundColor: '#4A4D55',
-                  position: 'absolute',
-                  top: '7px',
-                  left: '11px',
-                }}
-                _after={{
-                  content: '""',
-                  display: 'block',
-                  height: '1px',
-                  width: '9px',
-                  backgroundColor: '#4A4D55',
-                  position: 'absolute',
-                  top: '11px',
-                  left: '7px',
-                }}
+                {...InputButton}
+                _before={VerticalBar}
+                _after={HorizonBar}
                 // onClick={incQuantity}
                 _hover={{ cursor: 'pointer' }}
               />
@@ -167,4 +108,68 @@ const SubText = {
   fontSize: '16px',
   lineHeight: '28px',
   color: 'gray.600',
+};
+
+const ItemContainer = {
+  w: 'full',
+  pl: '16px',
+  // pr="16px"
+  // spacing={0}
+  pt: '20px',
+  // pb="20.5px"
+  // position="relative"
+};
+
+const ItemCheckBox = {
+  colorScheme: 'orange',
+  size: 'lg',
+  right: '170px',
+  top: '30px',
+};
+
+const GrayContainer = {
+  alignItems: 'flex-start',
+  mt: '15px',
+  p: '10px',
+  w: '315px',
+  bg: 'gray.200',
+  borderRadius: '5px',
+};
+
+const HorizonBar = {
+  content: '""',
+  display: 'block',
+  height: '1px',
+  width: '9px',
+  backgroundColor: '#4A4D55',
+  position: 'absolute',
+  top: '11px',
+  left: '7px',
+};
+
+const VerticalBar = {
+  content: '""',
+  display: 'block',
+  width: '1px',
+  height: '9px',
+  backgroundColor: '#4A4D55',
+  position: 'absolute',
+  top: '7px',
+  left: '11px',
+};
+
+const InputButton = {
+  background: 'white',
+  border: '1px solid #EAECF0',
+  borderRadius: '0px 5px 5px 0px',
+  w: '25px',
+  h: '25px',
+  padding: 0,
+};
+
+const InputValContainer = {
+  w: '23px',
+  h: 'full',
+  borderTop: '1px solid #EAECF0',
+  borderBottom: '1px solid #EAECF0',
 };
