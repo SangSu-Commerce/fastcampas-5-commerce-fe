@@ -79,10 +79,11 @@ function CartPage({ ...basisProps }: CartPageProps) {
         </Flex>
         <Flex {...TextStyle} pt="10px" w="350px" justify="space-between">
           <Box>총 배송비</Box>
-          <Box>
+          <Box pb="30px">
             {total == 0 ? '0 원' : total >= 30000 ? '0 원' : '3,000 원'}
           </Box>
         </Flex>
+        <Box w="350px" h="1px" bg="gray.200"></Box>
         <Flex
           {...TextStyle}
           color="#1A1A1A"
